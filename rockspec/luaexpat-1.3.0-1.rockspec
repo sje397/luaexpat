@@ -1,7 +1,7 @@
 package = "LuaExpat"
 version = "1.3.0-1"
 source = {
-   url = "https://github.com/tomasguisasola/luaexpat/archive/v1_3_0.tar.gz",
+   url = "https://github.com/sje397/luaexpat/archive/v1_3_0.tar.gz",
    md5 = "b45d9d1caa1c6acf4bfc54802ab8ec4c",
    dir = "luaexpat-1_3_0",
 }
@@ -25,7 +25,7 @@ external_dependencies = {
 build = {
    type = "builtin",
    modules = {
-    lxp = { 
+    lxp = {
       sources = { "src/lxplib.c" },
       libraries = { "expat" },
       incdirs = { "$(EXPAT_INCDIR)", "src/" },
